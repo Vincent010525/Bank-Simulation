@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TransactionsForm</title>
+</head>
+<body>
+<form method="post" action="show-transactions.php">
+    <label for="transaction_type">Transaction Type:</label>
+    <select name="transaction_type" id="transaction_type">
+        <option value="">---Select one---</option>
+        <option value="deposit">Deposit</option>
+        <option value="withdraw">Withdraw</option>
+        <option value="transfer">Transfer</option>
+    </select>
+    <p>
+        <input type="text" name="amount" placeholder="Amount" required/>
+    </p>
+    <p>
+        <input type="number" name="receiver" placeholder="Receiver">
+    </p>
+    <p>
+        <input type="text" name="description" placeholder="Description"/>
+    </p>
+    <p>
+        <input type="submit" name="make_transaction" value="Make Transaction"/>
+    </p>
+</form>
+
+<hr />
+
+<p>
+    <strong>Balance:</strong> ---balance---
+</p>
+
+<!--===entries===-->
+<p>
+    <strong>Transaction:</strong> ---id---
+</p>
+<p>
+    <strong>Time:</strong> ---time--- <br />
+    <strong>Type:</strong> ---type--- <br />
+    <strong>From:</strong> ---from--- <br />
+    <strong>To:</strong> ---to--- <br />
+    <strong>Amount:</strong> ---amount---
+</p>
+<p>
+    <strong>Comment:</strong> ---comment---
+</p>
+<!--===entries===-->
+</body>
+</html>

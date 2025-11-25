@@ -1,0 +1,27 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Ignore PHP server caches
+*.log
+*.cache
+
+# Ignore vendor if you ever install Composer
+/vendor/
+
+# Ignore temporary/backup files
+*.tmp
+*.bak
+*.old
+
+# Ignore node_modules if you ever use frontend tools
+/node_modules/
+
+# Ignore XAMPP/MAMP/WAMP specific files
+htdocs/
+xamppfiles/

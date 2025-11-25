@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AccountsForm</title>
+</head>
+<body>
+    <form method="post" action="show-accounts.php">
+        <p>
+            <input type="number" min="0" name="deposit" placeholder="Initial Deposit"/>
+        </p>
+        <p>
+            <input type="submit" name="open_bank_account" value="Open Bank Account"/>
+        </p>
+    </form>
+
+    <hr />
+
+    <!--===entries===-->
+    <a href="show-transactions.php?account_id=---id---">
+        <p>
+            <strong>Account:</strong> ---id---
+        </p>
+        <p>
+            <strong>Name:</strong> ---name--- <br />
+            <strong>Balance:</strong> ---balance---
+        </p>
+    </a>
+    <!--===entries===-->
+</body>
+</html>
